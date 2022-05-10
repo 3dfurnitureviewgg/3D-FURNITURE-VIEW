@@ -1,0 +1,90 @@
+/*presets&&fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=EB+Garamond:ital@1&family=Lobster&family=Oxygen:wght@300&family=Quicksand:wght@300;400;500&family=Titillium+Web&display=swap');
+/*
+font-family: 'Arimo', sans-serif; ~Descriere Produs~
+font-family: 'EB Garamond', serif; ~About Us~
+font-family: 'Lobster', cursive; ~stilizare~
+font-family: 'Oxygen', sans-serif; ~Produs~
+font-family: 'Quicksand', sans-serif; ~Stele testao~
+font-family: 'Titillium Web', sans-serif; ~Navbar~
+*/
+body { 
+    background:#111; 
+}
+form { max-width:420px; 
+    margin:50px auto; }
+form {
+    max-width:420px; 
+    margin:50px auto; }
+.imagg12{
+    display: block;
+      margin: 0 auto;
+      width: 40%;
+    margin-top: 100px;
+    
+}
+.feedback-input {
+    color: #c3c8f7;
+    font-family: 'Quicksand';
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border:2px solid #15172b;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+}
+
+.feedback-input:focus { border:2px solid #20244a; }
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'Quicksand';
+    width: 100%;
+    background:#15172b;
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color: #c3c8f7;
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
+}
+
+ @keyframes glowing {
+        0% {
+          background-color: #20244a;
+          box-shadow: 0 0 5px #20244a;
+        }
+        50% {
+          background-color: #292e63;
+          box-shadow: 0 0 20px #292e63;
+        }
+        100% {
+          background-color: #32397a;
+          box-shadow: 0 0 5px #32397a;
+        }
+      }
+[type="submit"]:hover {
+        animation: glowing 4000ms;
+      }
+.footeredit{
+ background: #111;
+position: relative;
+height: 250px;
+margin-top: -250px;
+    clear: both;
+}

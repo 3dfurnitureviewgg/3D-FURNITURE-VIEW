@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=EB+Garamond:ital@1&family=Lobster&family=Oxygen:wght@300&family=Quicksand:wght@300;400;500&family=Titillium+Web&display=swap');
+
+html, body {
+       overflow-x: hidden;
+}
+
+.site-content{
+    min-width: 100%;
+    height: auto;
+    margin: 0;
+}
+.content-header{
+margin: 0;
+height: 800px;}
+video{
+    opacity: 1;
+    overflow-y: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    filter:blur(8px);
+}
+.logonebun{
+     max-width: 100%;
+    height: auto;
+
+}
+.centerlogo{
+	position: absolute;
+	margin-left: 7.5%;
+	top: 15%;
+	max-width: 100%;
+	height: auto;
+	text-align: center;
+	filter: drop-shadow(0px 5px 5px #222);
+    padding: 0 15% 0; 
+}
+.slogan{
+	font-family:"Quicksand";
+	font-size: 3vw;
+	color: white;
+}
+  
+
+
+@media all and (max-width: 1620px) and (min-width: 1470px)  {
+    video{
+        filter: blur(5px);
+    }
+    .centerlogo{
+        margin-left: 0;
+    }}
+  @media all and (max-width: 1470px) and (min-width: 900px)  {
+    video{
+        padding-top: 1%;
+        filter: blur(5px);
+    }
+    .centerlogo{
+        top: 4%;
+        margin-left: 0;
+        
+    }}
+    @media all and (max-width: 900px) and (min-width: 300px)  {
+    video{
+        padding-top: 5%;
+        filter: blur(5px);
+    }
+    .centerlogo{
+        top: 4%;
+        margin-left: 0;
+        
+    }}
+    
+    
+
+
+
+.fugi{
+    font-family:"Quicksand";
+	font-size: 2vw;
+	color: white;
+    text-decoration: underline;
+}
+
+.content-media--video iframe {
+    position: absolute;
+  
+}

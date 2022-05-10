@@ -1,0 +1,154 @@
+/*presets&&fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=EB+Garamond:ital@1&family=Lobster&family=Oxygen:wght@300&family=Quicksand:wght@300;400;500&family=Titillium+Web&display=swap');
+/*
+font-family: 'Arimo', sans-serif; ~Descriere Produs~
+font-family: 'EB Garamond', serif; ~About Us~
+font-family: 'Lobster', cursive; ~stilizare~
+font-family: 'Oxygen', sans-serif; ~Produs~
+font-family: 'Quicksand', sans-serif; ~Stele testao~
+font-family: 'Titillium Web', sans-serif; ~Navbar~
+*/
+body {
+    font-family: 'Quicksand';
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+   
+}
+
+.form {
+    text-align: center;
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 500px;
+  padding: 20px;
+  width: 320px;
+}
+
+.title {
+  color: #eee;
+  font-family: 'Quicksand';
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: 'Quicksand';
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: 'Quicksand';
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-40px) translateX(-10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #808097 ;
+}
+
+.submit {
+    margin-top: 30px;
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  // outline: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
+p{
+   color: aliceblue; 
+}
+@keyframes glowing {
+        0% {
+          background-color: #06b;
+          box-shadow: 0 0 5px #06b;
+        }
+        50% {
+          background-color: #0265b8;
+          box-shadow: 0 0 20px #0265b8;
+        }
+        100% {
+          background-color: #035599;
+          box-shadow: 0 0 5px #035599;
+        }
+      }
+ .submit:hover {
+        animation: glowing 4000ms;
+      }
+
+.ok{
+    margin:auto;
+    width: 200px;
+    background-color: #95e8a0; 
+    margin-top: 20px;
+    text-align: center;
+    color: green;
+    font-size: 20px;
+}.err{
+    margin:auto;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fc3f3f;
+    font-size: 20px;
+}

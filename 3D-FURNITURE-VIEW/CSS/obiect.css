@@ -1,0 +1,200 @@
+/*presets&&fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=EB+Garamond:ital@1&family=Lobster&family=Oxygen:wght@300&family=Quicksand:wght@300;400;500&family=Titillium+Web&display=swap');
+/*
+font-family: 'Arimo', sans-serif; ~Descriere Produs~
+font-family: 'EB Garamond', serif; ~About Us~
+font-family: 'Lobster', cursive; ~stilizare~
+font-family: 'Oxygen', sans-serif; ~Produs~
+font-family: 'Quicksand', sans-serif; ~Stele testao~
+font-family: 'Titillium Web', sans-serif; ~Navbar~
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+
+html, corp {
+    overflow: visible;
+}
+
+.corp{
+    background: #131313;
+      min-height: 100%;
+  display: grid;
+
+}
+.footeredit{
+   grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.small-container{
+    max-width: 1110px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 20px
+}
+.btn1 ,.btn2 ,.btn3{
+    width: 95px;
+    position:absolute;
+    z-index: 1;
+    display:block;
+    height: 62px;
+    border-color: #4B77BE;
+    border-width: 3px;
+    border-radius: 20px;
+}
+.btn1{
+    background: url(masa.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+   
+
+}
+.imggg{
+   visibility: hidden;
+}
+.btn2{
+    margin-left: 100px;
+    background: url(masa.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+}
+.btn3{
+    margin-left: 200px;
+    background: url(masa.png);
+    background-size: 85px;
+    background-repeat: no-repeat;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 200px;
+}
+.single-product{
+    margin-top: 80px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-2 #ProductImg{
+    max-width: 100%;
+    padding 50px 0;
+}
+#ProductImg{
+    width: 500px;
+    height: 300px;
+    margin-left: -100px;
+}
+.small-img{
+    max-width:80px;
+    z-index:-1;
+    
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.single-product .col2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 7px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1 { 
+      color: #8282fa;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1.8px solid #4B77BE;
+    border-radius: 4px;
+    background-color: #0a2b57;
+    color: aliceblue;
+}
+h3{
+    color: lightgrey;
+}
+.single-product h2{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    color: mediumseagreen;
+}
+.single-product input{
+    
+   margin-bottom: 10px;
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: 1.8px solid #4B77BE;
+    border-radius: 4px;
+    background-color: #0a2b57;
+    color: aliceblue;
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: aliceblue;
+}
+
+.btn4{
+    display: inline-block;
+    background: #003171;
+    color: aliceblue;
+    margin: 30px 0;
+    border-radius: 10px;
+    transition: background 0.5s;
+    margin-left: 10px;
+}
+
+
+ @keyframes glowing {
+        0% {
+          background-color: #003171;
+          box-shadow: 0 0 5px #003171;
+        }
+        50% {
+          background-color: #003985;
+          box-shadow: 0 0 20px #003985;
+        }
+        100% {
+          background-color: #004db3;
+          box-shadow: 0 0 5px #004db3;
+        }
+      }
+.btn4:hover {
+        animation: glowing 4000ms;
+      }
+.wait{
+display: none;}
+
+.norocos{
+    padding-left: 10px; 
+}
+
+
+
+

@@ -1,0 +1,237 @@
+/*presets&&fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=EB+Garamond:ital@1&family=Lobster&family=Oxygen:wght@300&family=Quicksand:wght@300;400;500&family=Titillium+Web&display=swap');
+/*
+font-family: 'Arimo', sans-serif; ~Descriere Produs~
+font-family: 'EB Garamond', serif; ~About Us~
+font-family: 'Lobster', cursive; ~stilizare~
+font-family: 'Oxygen', sans-serif; ~Produs~
+font-family: 'Quicksand', sans-serif; ~Stele testao~
+font-family: 'Titillium Web', sans-serif; ~Navbar~
+*/
+:root{
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #101214;
+    --primary: #2c2c36;
+    --light: #EEEEEE;
+    --dark: #020114;
+}
+/*presets&&fonts*/
+
+
+/*basic*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+nav{
+    font-family: 'Quicksand';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: var(--dark);
+    padding: 5px 20px;
+    border-radius: 0px 0px 10px 10px;
+    
+}
+.logo2{
+    width: auto;
+    height: 60px;
+}
+
+/*basic*/
+/*hamburger*/
+.hamburger{
+    display: block;
+    position: relative;
+    z-index: 3;
+user-select: none;
+appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.hamburger span {
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+background-color:white;
+border-radius: 6px;
+z-index: 3;
+transform-origin: 0 0;
+transition: 0.5s;
+}
+.hamburger:hover span:nth-child(2){
+    transform: translateX(0px);
+    background-color: white;
+    
+}
+
+.hamburger.is-active span:nth-child(1){
+    transform: translate(0px, -2px) rotate(45deg);
+}
+.hamburger.is-active span:nth-child(3){
+    transform: translate(-3px, 3px) rotate(-45deg);
+}
+.hamburger.is-active span:nth-child(2){
+    opacity: 0;
+    transform: translate(15px);
+}
+.hamburger.is-active:hover span{
+    background-color: white;
+}
+.menu a.is-active, .menu a:hover{
+    background-color: var(--primary);
+}
+/*hamburger*/
+
+ul {
+  list-style-type: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+.menu li:not(.toggle,.logo) {
+  font-size: 15px;
+  padding: 10px 10px;
+  white-space: nowrap;
+}
+
+/*Meniu butoane*/
+
+.menu a{
+    color: #FFF;
+    margin: 0 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .75s;
+    padding: 8px 16px;
+    border-radius: 40px;
+}
+
+/*Meniu butoane*/
+
+/* Telefon*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.toggle {
+  order: 1;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+
+}
+.item.active {
+  display: block;
+   
+}
+
+.toggle {
+  cursor:pointer;
+}
+/* Telefon*/
+
+/*Tableta */
+@media all and (min-width: 489px) {
+  .menu {
+      justify-content: center;
+  }
+
+  .logo {
+      flex: 1;
+  }
+
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      order: 2;
+  }
+  .button a {
+      padding: 7.5px 15px;
+      background: ;
+      border: 1.7px #4f4f69 solid;
+      border-radius:50em;
+  }
+  .button a:hover {
+      text-decoration: none;
+      transition:all .25s;
+  }
+  .button a:hover {
+      background: #2c2c36;
+      border-color: #343445;
+  }
+}
+/*Tableta */
+
+/* Desktop */
+@media all and (min-width: 912px) {
+  .item {
+      display: block;
+      width: auto;
+  }
+  .toggle {
+      display: none;
+  }
+  .logo {
+      order: 0;
+  }
+  .item {
+      order: 1;
+  }
+  .button {
+      order: 2;
+  }
+  .menu li:not(.toggle,.logo) {
+      padding: 15px 10px;
+  }
+  .menu li.button {
+      padding-right: 0;
+  }
+    .logo2{
+padding: 0px;
+}
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+ border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
